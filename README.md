@@ -1,8 +1,7 @@
-# UdacityDSCapstone
-# Udacity Data Science Project 2
-## Disaster Response ML Pipeline
+# Udacity Data Science Capstone Project
+## Dog Breed Classifier
 
-This project uses Figure Eight message data to train message classification system. This would be useful to filter our unimportant messages and direct messages to the right people. The trained model can be accessed through a provided web app, instructions will follow.
+This project uses CNNs and Transfer Learning to predict dog breeds in images.
 
 ### Contents
 
@@ -19,8 +18,16 @@ This project uses Figure Eight message data to train message classification syst
 
 The following libraries were used in this project
 
-- sys
-- pandas
+- numpy
+- sklearn
+- keras
+- glob
+- random
+- cv2
+- matplotlib
+- tqdm
+- PIL
+- IPython
 
 ## Project Description <a name="Description"></a>
 
@@ -33,20 +40,20 @@ This project is part of the Udacity Data Science Nanodegree. The goal is to use 
 
 - `README.md`: Read me file (being read by you now)
 
-- `data/process_data.py`: Python script to process data, containing ETL pipeline
-- `data/DisasterResponse.db`: Disaster Response Database
-- `data/disaster_categories.csv`: categories csv file
-- `data/disaster_messages.csv`: messages csv file
+- `Images/`: Image files used for analysis after training
 
-- `models/train_classifier.py`: Python script to load data, create gridsearch to train model and store model
-- `models/classifier.pkl` (EXCLUDED SINCE FILE IS TOO LARGE): Optimal model in wider parameter space 
-- `models/classifier_balanced.pkl` (EXCLUDED SINCE FILE IS TOO LARGE): Optimal Random forest classifier with class frequency taken into account
-- `models/classifier_balanced_low.pkl` (EXCLUDED SINCE FILE IS TOO LARGE): Alternative Random forest classifier with class frequency taken into account
+- `saved_models/weights.best.from_scratch.hdf5`: Best weights from CNN from scratch
+- `saved_models/weights.best.Resnet50.hdf5`: Best weights using Resnet50 bottleneck features 
+- `saved_models/weights.best.VGG16.hdf5`: Best weights using VGG16 bottleneck features 
 
-- `app/templates/`: HTML Templates to be used for web app
-- `app/run.py`: Python script to launch web app
+- `extract_bottleneck_features.py`: script to extract bottleneck features for transfer learning
+
+- `dog_app.ipynb`: Notebook
+
+NOTE: The bottleneck features files were too large to add here
   
-## Instructions <a name="Instructions"></a>
+## Key Findings <a name="Key Findings"></a>
+
 
 To use the web app, download the `data`, `models` and `app` folders.
 
