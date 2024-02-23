@@ -54,7 +54,7 @@ NOTE: The bottleneck features files were too large to add here
   
 ## Key Findings <a name="Findings"></a>
 
-The findings are highlighted in this [blog](https://medium.com/@aidangmassaromlp/what-dog-are-you-using-convolutional-neural-networks-and-transfer-learning-to-predict-dog-breeds-a3b1eab0153c) and in the `dog_app.ipynb` notebook. Just to summarize here are some results:
+The findings are highlighted in this [blog](https://medium.com/@aidangmassaromlp/what-dog-are-you-using-convolutional-neural-networks-and-transfer-learning-to-predict-dog-breeds-83785e15903a) and in the `dog_app.ipynb` notebook. Just to summarize here are some results:
 
 - The best model which used Transfer LEarning with ResNet50 Bottleneck features had 78% predictive accuracy
 - The relatively small CNN built from scratch only had just over 1% predicitve accuracy
